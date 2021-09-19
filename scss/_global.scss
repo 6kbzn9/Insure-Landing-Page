@@ -18,6 +18,10 @@
 
 html {
   font-size: 62.5%;
+
+  @include max(350px) {
+    font-size: 58%;
+  }
 }
 
 body {

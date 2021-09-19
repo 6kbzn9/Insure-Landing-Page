@@ -7,6 +7,11 @@
 html {
   font-size: 62.5%;
 }
+@media (max-width: 350px) {
+  html {
+    font-size: 58%;
+  }
+}
 
 body {
   font-size: 1.6rem;
