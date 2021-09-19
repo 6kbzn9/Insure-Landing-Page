@@ -32,6 +32,28 @@ body {
 
 .btn {
   border: 2px solid;
+  padding: 0.75rem 1rem;
+  transition: 200ms ease-in-out;
+}
+.btn--white {
+  padding: 0.75rem 1.5rem;
+  display: inline-block;
+  text-decoration: none;
+  text-transform: uppercase;
+  color: #fafafa;
+  border-color: #fafafa;
+}
+.btn--white:hover {
+  color: #2d2640;
+  background-color: #fafafa;
+}
+.btn--dark {
+  color: #2b272f;
+  border-color: #2b272f;
+}
+.btn--dark:hover {
+  color: #fafafa;
+  background-color: #2b272f;
 }
 
 .header {
@@ -65,21 +87,16 @@ body {
   }
 }
 .header__links.desktop a {
-  color: #837d87;
   width: 100%;
   text-align: center;
   font-size: 1.8rem;
-  transition: 150ms ease-in-out;
 }
 .header__links.desktop a:not(:last-child) {
+  color: #837d87;
   margin-right: 2rem;
 }
-.header__links.desktop a:hover {
+.header__links.desktop a:not(:last-child):hover {
   color: #2b272f;
-}
-.header__links.desktop a.btn {
-  color: #2b272f;
-  padding: 0.75rem 1rem;
 }
 .header__links.mobile {
   position: absolute;
@@ -97,7 +114,6 @@ body {
   transform: translateX(0);
 }
 .header__links.mobile a {
-  color: #fafafa;
   display: block;
   width: 100%;
   text-align: center;
@@ -105,7 +121,11 @@ body {
   padding: 1rem 0;
 }
 .header__links.mobile a:not(:last-child) {
+  color: #fafafa;
   margin-bottom: 1rem;
+}
+.header__links.mobile a:not(:last-child):hover {
+  background-color: #2d2640;
 }
 @media (min-width: 670px) {
   .header__links.mobile {
@@ -115,6 +135,7 @@ body {
 .header__link {
   text-decoration: none;
   text-transform: uppercase;
+  transition: 150ms ease-in-out;
 }
 .header__burger {
   width: 3rem;
@@ -132,5 +153,33 @@ body {
   .header__burger {
     display: none;
   }
+}
+
+.intro {
+  margin-top: 7rem;
+  margin-bottom: 5rem;
+  width: 100%;
+  background-color: #2d2640;
+  color: #fafafa;
+}
+.intro__image {
+  width: 100%;
+  display: flex;
+}
+.intro__image img {
+  width: 100%;
+}
+.intro__content {
+  padding: 10rem 0;
+  text-align: center;
+}
+.intro__title {
+  font-size: 4.25rem;
+  margin-bottom: 2rem;
+  color: #fff;
+}
+.intro__body {
+  line-height: 1.5;
+  margin-bottom: 4rem;
 }
 /*# sourceMappingURL=main.css.map */

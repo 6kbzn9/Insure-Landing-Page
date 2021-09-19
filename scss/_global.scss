@@ -42,4 +42,27 @@ body {
 
 .btn {
   border: 2px solid;
+  padding: 0.75rem 1rem;
+  transition: 200ms ease-in-out;
+
+  &--white {
+    padding: 0.75rem 1.5rem;
+    display: inline-block;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: $VeryLightGray;
+    border-color: $VeryLightGray;
+    &:hover {
+      color: $DarkViolet;
+      background-color: $VeryLightGray;
+    }
+  }
+  &--dark {
+    color: $VeryDarkViolet;
+    border-color: $VeryDarkViolet;
+    &:hover {
+      color: $VeryLightGray;
+      background-color: $VeryDarkViolet;
+    }
+  }
 }
