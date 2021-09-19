@@ -244,8 +244,18 @@ body {
 
 .main {
   margin-top: 18rem;
-  text-align: center;
   color: #2b272f;
+  text-align: center;
+}
+@media (min-width: 990px) {
+  .main {
+    text-align: left;
+  }
+}
+@media (min-width: 1040px) {
+  .main {
+    margin-top: 24rem;
+  }
 }
 .main__title {
   font-size: 4rem;
@@ -262,12 +272,33 @@ body {
   height: 1px;
   background-color: #2d2640;
 }
-
-.card {
+@media (min-width: 990px) {
+  .main__title::before {
+    left: 0;
+    transform: translateX(0);
+  }
+}
+.main__cards {
+  max-width: 500px;
+  margin: 0 auto;
   margin-bottom: 12rem;
 }
+@media (min-width: 750px) {
+  .main__cards {
+    max-width: 100%;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-gap: 1.5rem;
+  }
+}
+
 .card:not(:last-child) {
   margin-bottom: 6rem;
+}
+@media (min-width: 750px) {
+  .card:not(:last-child) {
+    margin-bottom: 0;
+  }
 }
 .card__image {
   width: 9rem;

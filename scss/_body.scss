@@ -1,7 +1,14 @@
 .main {
   margin-top: 18rem;
-  text-align: center;
   color: $VeryDarkViolet;
+  text-align: center;
+
+  @include min(990px) {
+    text-align: left;
+  }
+  @include min(1040px) {
+    margin-top: 24rem;
+  }
 
   &__title {
     font-size: 4rem;
@@ -17,14 +24,32 @@
       width: 12rem;
       height: 1px;
       background-color: $DarkViolet;
+      @include min(990px) {
+        left: 0;
+        transform: translateX(0);
+      }
+    }
+  }
+
+  &__cards {
+    max-width: 500px;
+    margin: 0 auto;
+    margin-bottom: 12rem;
+    @include min(750px) {
+      max-width: 100%;
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      grid-gap: 1.5rem;
     }
   }
 }
 
 .card {
-  margin-bottom: 12rem;
   &:not(:last-child) {
     margin-bottom: 6rem;
+    @include min(750px) {
+      margin-bottom: 0;
+    }
   }
 
   &__image {
