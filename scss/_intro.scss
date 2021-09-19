@@ -21,15 +21,21 @@
     &.desktop {
       display: none;
 
-      img {
-        width: 100%;
-      }
       @include min(750px) {
+        display: inline-block;
+        position: relative;
+        img {
+          width: 100%;
+        }
+      }
+      @include min(990px) {
         display: inline-block;
         position: relative;
 
         img {
           position: absolute;
+          left: 0;
+          top: -5rem;
         }
       }
     }
@@ -46,12 +52,28 @@
       text-align: left;
       padding: 5rem 0;
     }
+    @include min(990px) {
+      padding: 13rem 0;
+    }
   }
 
   &__title {
     font-size: 4.25rem;
     margin-bottom: 2rem;
     color: #fff;
+    position: relative;
+
+    @include min(990px) {
+      &::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: -5rem;
+        width: 10rem;
+        height: 1px;
+        background-color: $VeryLightGray;
+      }
+    }
   }
   &__body {
     line-height: 1.5;
