@@ -1,0 +1,45 @@
+@mixin max($width) {
+  @media (max-width: $width) {
+    @content;
+  }
+}
+
+@mixin min($width) {
+  @media (min-width: $width) {
+    @content;
+  }
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  font-size: 1.6rem;
+  //   font-family: "DM Serif Display", serif;
+  font-family: "Karla", sans-serif;
+  min-height: 200vh;
+}
+.wrapper {
+  width: 100vw;
+  position: relative;
+}
+.container {
+  width: 90%;
+  max-width: 500px;
+  margin: 0 auto;
+
+  @include min(670px) {
+    max-width: 1000px;
+  }
+}
+
+.btn {
+  border: 2px solid;
+}

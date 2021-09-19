@@ -1,0 +1,14 @@
+{
+  "name": "Insure-Landing-Page",
+  "version": "1.0.0",
+  "description": "Frontend mentor challenge",
+  "main": "/",
+  "author": "6kbzn9",
+  "license": "MIT",
+  "devDependencies": {
+    "browser-sync": "^2.27.5",
+    "gulp": "^4.0.2",
+    "gulp-sass": "^5.0.0",
+    "sass": "^1.41.1"
+  }
+}
