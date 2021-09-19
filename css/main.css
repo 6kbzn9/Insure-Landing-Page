@@ -241,4 +241,49 @@ body {
   line-height: 1.5;
   margin-bottom: 4rem;
 }
+
+.main {
+  margin-top: 18rem;
+  text-align: center;
+  color: #2b272f;
+}
+.main__title {
+  font-size: 4rem;
+  position: relative;
+  margin-bottom: 8rem;
+}
+.main__title::before {
+  position: absolute;
+  content: "";
+  top: -3rem;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 12rem;
+  height: 1px;
+  background-color: #2d2640;
+}
+
+.card {
+  margin-bottom: 12rem;
+}
+.card:not(:last-child) {
+  margin-bottom: 6rem;
+}
+.card__image {
+  width: 9rem;
+  height: 9rem;
+  margin-bottom: 4rem;
+  display: inline-block;
+}
+.card__image img {
+  width: 100%;
+}
+.card__title {
+  font-size: 2.5rem;
+  margin-bottom: 2.5rem;
+}
+.card__body {
+  color: #837d87;
+  line-height: 1.5;
+}
 /*# sourceMappingURL=main.css.map */
