@@ -162,16 +162,45 @@ body {
   background-color: #2d2640;
   color: #fafafa;
 }
-.intro__image {
+.intro__image.mobile {
   width: 100%;
   display: flex;
 }
-.intro__image img {
+.intro__image.mobile img {
   width: 100%;
+}
+@media (min-width: 750px) {
+  .intro__image.mobile {
+    display: none;
+  }
+}
+.intro__image.desktop {
+  display: none;
+}
+.intro__image.desktop img {
+  width: 100%;
+}
+@media (min-width: 750px) {
+  .intro__image.desktop {
+    display: inline-block;
+    position: relative;
+  }
+  .intro__image.desktop img {
+    position: absolute;
+  }
 }
 .intro__content {
   padding: 10rem 0;
   text-align: center;
+}
+@media (min-width: 750px) {
+  .intro__content {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 1.5rem;
+    text-align: left;
+    padding: 5rem 0;
+  }
 }
 .intro__title {
   font-size: 4.25rem;

@@ -6,17 +6,46 @@
   color: $VeryLightGray;
 
   &__image {
-    width: 100%;
-    display: flex;
-
-    img {
+    &.mobile {
       width: 100%;
+      display: flex;
+
+      img {
+        width: 100%;
+      }
+      @include min(750px) {
+        display: none;
+      }
+    }
+
+    &.desktop {
+      display: none;
+
+      img {
+        width: 100%;
+      }
+      @include min(750px) {
+        display: inline-block;
+        position: relative;
+
+        img {
+          position: absolute;
+        }
+      }
     }
   }
 
   &__content {
     padding: 10rem 0;
     text-align: center;
+
+    @include min(750px) {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      grid-gap: 1.5rem;
+      text-align: left;
+      padding: 5rem 0;
+    }
   }
 
   &__title {
