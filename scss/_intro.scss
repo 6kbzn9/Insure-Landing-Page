@@ -54,6 +54,7 @@
     }
     @include min(990px) {
       padding: 13rem 0;
+      grid-gap: 2rem;
     }
   }
 
@@ -64,6 +65,7 @@
     position: relative;
 
     @include min(990px) {
+      font-size: 6rem;
       &::before {
         content: "";
         position: absolute;

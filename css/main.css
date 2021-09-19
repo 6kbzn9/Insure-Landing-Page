@@ -218,6 +218,7 @@ body {
 @media (min-width: 990px) {
   .intro__content {
     padding: 13rem 0;
+    grid-gap: 2rem;
   }
 }
 .intro__title {
@@ -227,6 +228,9 @@ body {
   position: relative;
 }
 @media (min-width: 990px) {
+  .intro__title {
+    font-size: 6rem;
+  }
   .intro__title::before {
     content: "";
     position: absolute;
@@ -261,6 +265,11 @@ body {
   font-size: 4rem;
   position: relative;
   margin-bottom: 8rem;
+}
+@media (min-width: 990px) {
+  .main__title {
+    font-size: 6rem;
+  }
 }
 .main__title::before {
   position: absolute;

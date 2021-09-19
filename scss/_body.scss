@@ -14,6 +14,9 @@
     font-size: 4rem;
     position: relative;
     margin-bottom: 8rem;
+    @include min(990px) {
+      font-size: 6rem;
+    }
 
     &::before {
       position: absolute;
