@@ -44,6 +44,9 @@
       grid-template-columns: repeat(3, 1fr);
       grid-gap: 1.5rem;
     }
+    @include min(990px) {
+      grid-gap: 2rem;
+    }
   }
 }
 

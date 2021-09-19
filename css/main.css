@@ -300,6 +300,11 @@ body {
     grid-gap: 1.5rem;
   }
 }
+@media (min-width: 990px) {
+  .main__cards {
+    grid-gap: 2rem;
+  }
+}
 
 .card:not(:last-child) {
   margin-bottom: 6rem;
