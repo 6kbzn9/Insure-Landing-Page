@@ -1,0 +1,51 @@
+.footer {
+  background-color: $VeryLightGray;
+  padding: 5rem 0;
+
+  &__social {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4rem;
+    border-bottom: 1px solid $GrayishBlue;
+
+    @include min(750px) {
+      flex-direction: row;
+      justify-content: space-between;
+    }
+  }
+
+  &__logo {
+    width: 12rem;
+    cursor: pointer;
+    margin-bottom: 3rem;
+
+    @include min(750px) {
+      margin-bottom: 0;
+    }
+
+    img {
+      width: 100%;
+      display: block;
+    }
+  }
+
+  &__icons {
+    display: flex;
+    .icon {
+      text-decoration: none;
+      color: $DarkGrayishViolet;
+      width: 3rem;
+      height: 3rem;
+      font-size: 3rem;
+      transition: 150ms ease-in-out;
+
+      &:hover {
+        color: $VeryDarkViolet;
+      }
+      &:not(:last-child) {
+        margin-right: 1.5rem;
+      }
+    }
+  }
+}

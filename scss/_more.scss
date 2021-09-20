@@ -1,0 +1,37 @@
+.more {
+  text-align: center;
+  background-color: $DarkViolet;
+  padding: 7rem 0;
+  margin-bottom: 10rem;
+
+  @include min(500px) {
+    padding: 7rem 2rem;
+  }
+  @include min(750px) {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 5rem 4rem;
+  }
+
+  &__title {
+    font-size: 4rem;
+    margin-bottom: 5rem;
+    color: $VeryLightGray;
+
+    @include min(670px) {
+      max-width: 80%;
+      margin: 0 auto 5rem;
+    }
+
+    @include min(750px) {
+      margin: 0;
+      max-width: 65%;
+      text-align: left;
+    }
+    @include min(990px) {
+      font-size: 6rem;
+      max-width: 70%;
+    }
+  }
+}
